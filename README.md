@@ -1,10 +1,8 @@
 Synthetically generate data for our client Recyleye.
 
 Done together with: 
-Liudas Mikalauskas
-Simon Mariën
-Abel Van Steenweghen
-Rahul Kochar
+
+Liudas Mikalauskas, Simon Mariën, Abel Van Steenweghen, Rahul Kochar
 
 Project plan: https://www.overleaf.com/project/5e9eba0cd86870000192edc4
 
