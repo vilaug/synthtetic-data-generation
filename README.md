@@ -1,5 +1,11 @@
 Synthetically generate data for our client Recyleye.
 
+Done together with: 
+Liudas Mikalauskas
+Simon Mariën
+Abel Van Steenweghen
+Rahul Kochar
+
 Project plan: https://www.overleaf.com/project/5e9eba0cd86870000192edc4
 
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=tudelt-project&metric=coverage&token=f5d41b95f43e05d080447ad9da895f54d4ebf033)](https://sonarcloud.io/dashboard?id=tudelt-project)
