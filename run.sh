@@ -1,0 +1,1 @@
+docker run -it --rm -v "$(pwd)":/workdir recycleye blender -noaudio -b -E CYCLES -P src/blender/main.py -- --h

@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: built-in module parser</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>parser</strong></big></big> (version 0.5)</font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br>(built-in)</font></td></tr></table>
+    <p><tt>This&nbsp;is&nbsp;an&nbsp;interface&nbsp;to&nbsp;Python's&nbsp;internal&nbsp;parser.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#Exception">builtins.Exception</a>(<a href="builtins.html#BaseException">builtins.BaseException</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="parser.html#ParserError">ParserError</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial">st
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ParserError">class <strong>ParserError</strong></a>(<a href="builtins.html#Exception">builtins.Exception</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Common&nbsp;base&nbsp;class&nbsp;for&nbsp;all&nbsp;non-exit&nbsp;exceptions.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="parser.html#ParserError">ParserError</a></dd>
+<dd><a href="builtins.html#Exception">builtins.Exception</a></dd>
+<dd><a href="builtins.html#BaseException">builtins.BaseException</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="builtins.html#Exception">builtins.Exception</a>:<br>
+<dl><dt><a name="ParserError-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Static methods inherited from <a href="builtins.html#Exception">builtins.Exception</a>:<br>
+<dl><dt><a name="ParserError-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;<a href="builtins.html#object">object</a>.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><a name="ParserError-__delattr__"><strong>__delattr__</strong></a>(self, name, /)</dt><dd><tt>Implement&nbsp;delattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="ParserError-__getattribute__"><strong>__getattribute__</strong></a>(self, name, /)</dt><dd><tt>Return&nbsp;getattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="ParserError-__reduce__"><strong>__reduce__</strong></a>(...)</dt><dd><tt>Helper&nbsp;for&nbsp;pickle.</tt></dd></dl>
+
+<dl><dt><a name="ParserError-__repr__"><strong>__repr__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="ParserError-__setattr__"><strong>__setattr__</strong></a>(self, name, value, /)</dt><dd><tt>Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</tt></dd></dl>
+
+<dl><dt><a name="ParserError-__setstate__"><strong>__setstate__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="ParserError-__str__"><strong>__str__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="ParserError-with_traceback"><strong>with_traceback</strong></a>(...)</dt><dd><tt><a href="builtins.html#Exception">Exception</a>.<a href="#ParserError-with_traceback">with_traceback</a>(tb)&nbsp;--<br>
+set&nbsp;self.<strong>__traceback__</strong>&nbsp;to&nbsp;tb&nbsp;and&nbsp;return&nbsp;self.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><strong>__cause__</strong></dt>
+<dd><tt>exception&nbsp;cause</tt></dd>
+</dl>
+<dl><dt><strong>__context__</strong></dt>
+<dd><tt>exception&nbsp;context</tt></dd>
+</dl>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<dl><dt><strong>__suppress_context__</strong></dt>
+</dl>
+<dl><dt><strong>__traceback__</strong></dt>
+</dl>
+<dl><dt><strong>args</strong></dt>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><strong>STType</strong> = <a name="STType">class st</a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Intermediate&nbsp;representation&nbsp;of&nbsp;a&nbsp;Python&nbsp;parse&nbsp;tree.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="st-__eq__"><strong>__eq__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;self==value.</tt></dd></dl>
+
+<dl><dt><a name="st-__ge__"><strong>__ge__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;self&gt;=value.</tt></dd></dl>
+
+<dl><dt><a name="st-__gt__"><strong>__gt__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;self&gt;value.</tt></dd></dl>
+
+<dl><dt><a name="st-__le__"><strong>__le__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;self&lt;=value.</tt></dd></dl>
+
+<dl><dt><a name="st-__lt__"><strong>__lt__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;self&lt;value.</tt></dd></dl>
+
+<dl><dt><a name="st-__ne__"><strong>__ne__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;self!=value.</tt></dd></dl>
+
+<dl><dt><a name="st-__sizeof__"><strong>__sizeof__</strong></a>(...)</dt><dd><tt>Returns&nbsp;size&nbsp;in&nbsp;memory,&nbsp;in&nbsp;bytes.</tt></dd></dl>
+
+<dl><dt><a name="st-compile"><strong>compile</strong></a>(...)</dt><dd><tt>Compile&nbsp;this&nbsp;ST&nbsp;<a href="builtins.html#object">object</a>&nbsp;into&nbsp;a&nbsp;code&nbsp;<a href="builtins.html#object">object</a>.</tt></dd></dl>
+
+<dl><dt><a name="st-isexpr"><strong>isexpr</strong></a>(...)</dt><dd><tt>Determines&nbsp;if&nbsp;this&nbsp;ST&nbsp;<a href="builtins.html#object">object</a>&nbsp;was&nbsp;created&nbsp;from&nbsp;an&nbsp;expression.</tt></dd></dl>
+
+<dl><dt><a name="st-issuite"><strong>issuite</strong></a>(...)</dt><dd><tt>Determines&nbsp;if&nbsp;this&nbsp;ST&nbsp;<a href="builtins.html#object">object</a>&nbsp;was&nbsp;created&nbsp;from&nbsp;a&nbsp;suite.</tt></dd></dl>
+
+<dl><dt><a name="st-tolist"><strong>tolist</strong></a>(...)</dt><dd><tt>Creates&nbsp;a&nbsp;list-tree&nbsp;representation&nbsp;of&nbsp;this&nbsp;ST.</tt></dd></dl>
+
+<dl><dt><a name="st-totuple"><strong>totuple</strong></a>(...)</dt><dd><tt>Creates&nbsp;a&nbsp;tuple-tree&nbsp;representation&nbsp;of&nbsp;this&nbsp;ST.</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__hash__</strong> = None</dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-compilest"><strong>compilest</strong></a>(...)</dt><dd><tt>Compiles&nbsp;an&nbsp;ST&nbsp;<a href="builtins.html#object">object</a>&nbsp;into&nbsp;a&nbsp;code&nbsp;<a href="builtins.html#object">object</a>.</tt></dd></dl>
+ <dl><dt><a name="-expr"><strong>expr</strong></a>(...)</dt><dd><tt>Creates&nbsp;an&nbsp;ST&nbsp;<a href="builtins.html#object">object</a>&nbsp;from&nbsp;an&nbsp;expression.</tt></dd></dl>
+ <dl><dt><a name="-isexpr"><strong>isexpr</strong></a>(...)</dt><dd><tt>Determines&nbsp;if&nbsp;an&nbsp;ST&nbsp;<a href="builtins.html#object">object</a>&nbsp;was&nbsp;created&nbsp;from&nbsp;an&nbsp;expression.</tt></dd></dl>
+ <dl><dt><a name="-issuite"><strong>issuite</strong></a>(...)</dt><dd><tt>Determines&nbsp;if&nbsp;an&nbsp;ST&nbsp;<a href="builtins.html#object">object</a>&nbsp;was&nbsp;created&nbsp;from&nbsp;a&nbsp;suite.</tt></dd></dl>
+ <dl><dt><a name="-sequence2st"><strong>sequence2st</strong></a>(...)</dt><dd><tt>Creates&nbsp;an&nbsp;ST&nbsp;<a href="builtins.html#object">object</a>&nbsp;from&nbsp;a&nbsp;tree&nbsp;representation.</tt></dd></dl>
+ <dl><dt><a name="-st2list"><strong>st2list</strong></a>(...)</dt><dd><tt>Creates&nbsp;a&nbsp;list-tree&nbsp;representation&nbsp;of&nbsp;an&nbsp;ST.</tt></dd></dl>
+ <dl><dt><a name="-st2tuple"><strong>st2tuple</strong></a>(...)</dt><dd><tt>Creates&nbsp;a&nbsp;tuple-tree&nbsp;representation&nbsp;of&nbsp;an&nbsp;ST.</tt></dd></dl>
+ <dl><dt><a name="-suite"><strong>suite</strong></a>(...)</dt><dd><tt>Creates&nbsp;an&nbsp;ST&nbsp;<a href="builtins.html#object">object</a>&nbsp;from&nbsp;a&nbsp;suite.</tt></dd></dl>
+ <dl><dt><a name="-tuple2st"><strong>tuple2st</strong></a>(...)</dt><dd><tt>Creates&nbsp;an&nbsp;ST&nbsp;<a href="builtins.html#object">object</a>&nbsp;from&nbsp;a&nbsp;tree&nbsp;representation.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>__copyright__</strong> = 'Copyright 1995-1996 by Virginia Polytechnic Inst...Mathematisch<font color="#c040c0">\n</font>Centrum, Amsterdam, The Netherlands.'</td></tr></table>
+</body></html>

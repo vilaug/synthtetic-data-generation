@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Data Generation</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+</head>
+<body style="background-color:#fefefe">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <a href="/">
+                <img style="max-height: 300px" alt="Recycleye company logo" src="/static/logo.png" class="img-fluid mx-auto d-block">
+            </a>
+            {% if time_data %}
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <table class="table table-responsive">
+                        <caption>Generation times</caption>
+                        <thead>
+                        <tr>
+                            <th scope="col">Task</th>
+                            <th scope="col">Seconds taken</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for key, value in time_data.items() %}
+                        <tr>
+                            <td>{{ key }}</td>
+                            <td>{{ value }}</td>
+                        </tr>
+                        {% endfor %}
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+            {% endif %}
+            <br>
+            <a href="/download_images">
+                <button type="submit" class="btn btn-success btn-lg btn-block">Download</button>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

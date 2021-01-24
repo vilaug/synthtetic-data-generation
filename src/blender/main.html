@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module main</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>main</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:d%3A%5Cdocuments%5Crecycleye%5Csrc%5Cblender%5Cmain.py">d:\documents\recycleye\src\blender\main.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="pathlib.html">pathlib</a><br>
+</td><td width="25%" valign=top><a href="random.html">random</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top><a href="time.html">time</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-main"><strong>main</strong></a>(args)</dt><dd><tt>Main&nbsp;method&nbsp;of&nbsp;our&nbsp;code.<br>
+Sets&nbsp;the&nbsp;paths&nbsp;of&nbsp;background&nbsp;and&nbsp;object.<br>
+:param&nbsp;args:&nbsp;arguments&nbsp;used&nbsp;for&nbsp;parsing&nbsp;to&nbsp;values.<br>
+:return:&nbsp;time_data:&nbsp;a&nbsp;dictionary&nbsp;with&nbsp;timestamps&nbsp;of&nbsp;the&nbsp;different&nbsp;stages&nbsp;of&nbsp;the&nbsp;pipeline</tt></dd></dl>
+ <dl><dt><a name="-make_object_selection"><strong>make_object_selection</strong></a>(args, number_of_objects, models)</dt><dd><tt>Makes&nbsp;a&nbsp;random&nbsp;selection&nbsp;of&nbsp;objects&nbsp;that&nbsp;will&nbsp;be&nbsp;used&nbsp;in&nbsp;the&nbsp;scene&nbsp;with&nbsp;proper&nbsp;proportions.<br>
+Checks&nbsp;if&nbsp;their&nbsp;needs&nbsp;to&nbsp;be&nbsp;a&nbsp;new&nbsp;crushing&nbsp;of&nbsp;objects&nbsp;or&nbsp;we&nbsp;will&nbsp;re-use.<br>
+:param&nbsp;args:&nbsp;Arguments&nbsp;passed&nbsp;to&nbsp;the&nbsp;main<br>
+:param&nbsp;number_of_objects:&nbsp;List&nbsp;with&nbsp;proportions&nbsp;to&nbsp;indicate&nbsp;the&nbsp;amount&nbsp;of&nbsp;material&nbsp;objects<br>
+:param&nbsp;models:&nbsp;list&nbsp;of&nbsp;models<br>
+:return:&nbsp;list&nbsp;of&nbsp;selected&nbsp;objects</tt></dd></dl>
+ <dl><dt><a name="-render"><strong>render</strong></a>(args, render_configuration, scene, objects)</dt><dd><tt>This&nbsp;method&nbsp;renders&nbsp;images&nbsp;with&nbsp;a&nbsp;static&nbsp;set&nbsp;of&nbsp;objects.<br>
+It&nbsp;first&nbsp;makes&nbsp;random&nbsp;selection&nbsp;of&nbsp;models&nbsp;to&nbsp;be&nbsp;rendered.<br>
+For&nbsp;each&nbsp;image&nbsp;it&nbsp;re-uses&nbsp;the&nbsp;objects&nbsp;but&nbsp;randomizes&nbsp;and&nbsp;repositions&nbsp;them.<br>
+This&nbsp;makes&nbsp;for&nbsp;better&nbsp;performance&nbsp;since&nbsp;we&nbsp;reduce&nbsp;the&nbsp;imports<br>
+form&nbsp;a&nbsp;linear&nbsp;to&nbsp;a&nbsp;constant&nbsp;time&nbsp;complexity.<br>
+:param&nbsp;args:&nbsp;Arguments&nbsp;passed&nbsp;to&nbsp;the&nbsp;main<br>
+:param&nbsp;render_configuration:&nbsp;Current&nbsp;render&nbsp;configuration<br>
+:param&nbsp;scene:&nbsp;Scene&nbsp;containing&nbsp;the&nbsp;background&nbsp;and&nbsp;border&nbsp;planes<br>
+:param&nbsp;objects:&nbsp;Objects&nbsp;to&nbsp;be&nbsp;rendered.<br>
+:return:&nbsp;time_data:&nbsp;for&nbsp;analyzing&nbsp;performance</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>src_dir</strong> = '/workdir'<br>
+<strong>time_data</strong> = {}</td></tr></table>
+</body></html>

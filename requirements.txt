@@ -1,0 +1,8 @@
+numpy
+flake8
+flake8-functions
+ffmpeg
+codecov
+coverage
+flask
+PyYAML

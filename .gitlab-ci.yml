@@ -1,0 +1,41 @@
+image: "python:3.8"
+
+
+stages:
+  - lint
+  - test
+  - verify
+
+lint:
+  stage: lint
+  script:
+    - python --version
+    - pip freeze >> requirements.txt
+    - pip install -r requirements.txt
+    - cd src
+    - flake8 --statistics --max-function-length=15 --max-line-length=100
+    - cd ../test
+    - pip install --user codecov
+
+unittest:
+  image: gitlab/dind
+  services:
+    - docker:dind
+  stage: test
+  script:
+    - sudo chmod +x ./test.sh
+    - ./test.sh
+
+verify:
+    image:
+        name: sonarsource/sonar-scanner-cli:latest
+        entrypoint: [""]
+    variables:
+        SONAR_TOKEN: "your-sonarqube-token"
+        SONAR_HOST_URL: "http://your-sonarqube-instance.org"
+        GIT_DEPTH: 0
+    stage: verify
+    script: sonar-scanner   -D"sonar.organization=recycleye"   -D"sonar.projectKey=tudelt-project"   -D"sonar.sources=."   -D"sonar.host.url=https://sonarcloud.io"  -D"sonar.login=1ec3a0f51816707a52d450fd7eae387ece780eab"
+    allow_failure: true
+    only:
+        - master

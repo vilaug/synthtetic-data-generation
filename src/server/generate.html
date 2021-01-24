@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module generate</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>generate</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:d%3A%5Cdocuments%5Crecycleye%5Csrc%5Cserver%5Cgenerate.py">d:\documents\recycleye\src\server\generate.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-check_generate"><strong>check_generate</strong></a>(form, configuration)</dt><dd><tt>Checks&nbsp;the&nbsp;generate&nbsp;form.<br>
+:param&nbsp;form&nbsp;:&nbsp;dictionary&nbsp;of&nbsp;the&nbsp;request&nbsp;form<br>
+:param&nbsp;configuration:&nbsp;configuration&nbsp;of&nbsp;the&nbsp;server</tt></dd></dl>
+ <dl><dt><a name="-check_materials"><strong>check_materials</strong></a>(form, materials, flash_func)</dt><dd><tt>Checks&nbsp;the&nbsp;material&nbsp;proportions.<br>
+:param&nbsp;form:&nbsp;dictionary&nbsp;of&nbsp;the&nbsp;request&nbsp;form<br>
+:param&nbsp;materials:&nbsp;list&nbsp;of&nbsp;material&nbsp;names<br>
+:param&nbsp;flash_func:&nbsp;function&nbsp;to&nbsp;flash&nbsp;the&nbsp;client&nbsp;with<br>
+&nbsp;<br>
+:return&nbsp;&nbsp;material_list:&nbsp;list&nbsp;of&nbsp;materials&nbsp;for&nbsp;the&nbsp;bash&nbsp;script<br>
+:return&nbsp;material_prop:&nbsp;list&nbsp;of&nbsp;proportions&nbsp;that&nbsp;were&nbsp;checked&nbsp;to&nbsp;be&nbsp;numeric<br>
+:return&nbsp;total_prop:&nbsp;total&nbsp;proportion&nbsp;that&nbsp;was&nbsp;calculated<br>
+:return&nbsp;found_false_input:&nbsp;if&nbsp;any&nbsp;false&nbsp;input&nbsp;was&nbsp;found</tt></dd></dl>
+ <dl><dt><a name="-check_numerical_parameters"><strong>check_numerical_parameters</strong></a>(form, bash_script, flash_func, numerical)</dt><dd><tt>Checks&nbsp;the&nbsp;numerical&nbsp;parameters<br>
+:param&nbsp;form:&nbsp;dictionary&nbsp;of&nbsp;the&nbsp;request&nbsp;form<br>
+:param&nbsp;bash_script:&nbsp;script&nbsp;to&nbsp;insert&nbsp;values&nbsp;into<br>
+:param&nbsp;flash_func:&nbsp;function&nbsp;to&nbsp;flash&nbsp;the&nbsp;client&nbsp;with<br>
+:param&nbsp;numerical:&nbsp;numerical&nbsp;parameters&nbsp;with&nbsp;names&nbsp;and&nbsp;values<br>
+&nbsp;<br>
+:return&nbsp;bash_script:&nbsp;the&nbsp;edited&nbsp;script<br>
+:return&nbsp;found_false_input:&nbsp;if&nbsp;any&nbsp;false&nbsp;input&nbsp;was&nbsp;found</tt></dd></dl>
+ <dl><dt><a name="-check_switches"><strong>check_switches</strong></a>(form, bash_script, flash_func, switches)</dt><dd><tt>Checks&nbsp;the&nbsp;switch&nbsp;parameters.<br>
+:param&nbsp;form:&nbsp;dictionary&nbsp;of&nbsp;the&nbsp;request&nbsp;form<br>
+:param&nbsp;bash_script:&nbsp;script&nbsp;to&nbsp;insert&nbsp;values&nbsp;into<br>
+:param&nbsp;flash_func:&nbsp;function&nbsp;to&nbsp;flash&nbsp;the&nbsp;client&nbsp;with<br>
+:param&nbsp;switches:&nbsp;switch&nbsp;parameters&nbsp;with&nbsp;names&nbsp;and&nbsp;values<br>
+&nbsp;<br>
+:return&nbsp;bash_script:&nbsp;the&nbsp;edited&nbsp;script<br>
+:return&nbsp;found_false_input:&nbsp;if&nbsp;two&nbsp;or&nbsp;more&nbsp;switches&nbsp;were&nbsp;active</tt></dd></dl>
+ <dl><dt><a name="-generate_images"><strong>generate_images</strong></a>(form, material_list, material_prop, configuration)</dt><dd><tt>Parse&nbsp;the&nbsp;arguments&nbsp;and&nbsp;run&nbsp;the&nbsp;bash&nbsp;script<br>
+:param&nbsp;form:&nbsp;dictionary&nbsp;of&nbsp;the&nbsp;request&nbsp;form<br>
+:param&nbsp;material_list:&nbsp;list&nbsp;of&nbsp;materials&nbsp;to&nbsp;insert<br>
+:param&nbsp;material_prop:&nbsp;list&nbsp;of&nbsp;proportions&nbsp;to&nbsp;insert<br>
+:param&nbsp;configuration:&nbsp;configuration&nbsp;of&nbsp;the&nbsp;server<br>
+&nbsp;<br>
+:return:&nbsp;either&nbsp;download&nbsp;or&nbsp;generate&nbsp;view&nbsp;depending&nbsp;on&nbsp;the&nbsp;input</tt></dd></dl>
+ <dl><dt><a name="-get_time_data"><strong>get_time_data</strong></a>(stdout)</dt><dd><tt>Parse&nbsp;the&nbsp;arguments.<br>
+:param&nbsp;stdout:&nbsp;output&nbsp;of&nbsp;the&nbsp;bash&nbsp;script<br>
+:return:&nbsp;time&nbsp;data.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>PIPE</strong> = -1</td></tr></table>
+</body></html>

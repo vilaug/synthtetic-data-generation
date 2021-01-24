@@ -1,0 +1,61 @@
+# configuration file
+
+camera:
+
+  location: [0, 0, 3]
+  rotation: [0, 0, 0]
+
+light:
+  location: [0, 0, 3]
+  energy: 200
+  type: AREA
+
+info_json:
+  description: 'Generated waste images'
+  version: 0.8
+  categories:
+    # Super category and it's subcategories together with category_id
+    materials:
+      Mask: 0
+      Aluminium: 1
+      Cardboard: 2
+      HDPE: 3
+      PET: 4
+  # Names of objects and their respective category
+  names:
+    Can: 'Aluminium'
+    Plane: 'Cardboard'
+    PlasticBottle: 'PET'
+    milk_jug: 'HDPE'
+
+
+render:
+  res_width: 1200
+  res_height: 800
+  res_percentage: 100
+  max_bounces: 1
+  samples: 30
+  tile_x: 64 #CPU default is 64, GPU 256 or 512
+  tile_y: 64 #CPU default is 64, GPU 256 or 512
+
+flask:
+  # Materials, an option to put in a proportion
+  materials: ['Aluminium', 'Cardboard', 'HDPE', 'Mask', 'PET']
+  # Numerical arguments, together with their long option i.e. --image_count
+  numerical: [['Objects per image','objects_per_image'], ['Image count','image_count']]
+  # Switch arguments, together with their long option i.e. --only_crush, only one switch maybe active
+  switches: [['Only crush','only_crush'], ['Reuse crushes','reuse_crushes'], ['Do not crush', 'dont_crush']]
+
+skins:
+  Aluminium:
+    Can: ["CokeRegular.png", "FantaGrape.png", "Sprite.png", "CokeZero.png", "DietSodaOrange.png", "FantaOrange.png", "FantaPineapple.png", "FantaStrawberry.png", "MountainDew.png", "Pepsi.png"]
+  Cardboard:
+    PizzaBox: ["Dominos.png", "NYC.png", "PapaJohn.png", "PizzaHut.png"]
+  PET:
+    PlasticBottle: ["CokeRegular.png", "FantaGrape.png", "FantaOrange.png", "FantaPineapple.png", "FantaStrawberry.png", "MountainDew.png"]
+
+jazz: 1
+
+change_skin:
+  0: ["MilkJug", "Bottle", "PlasticCup", "MedicineBottle"]
+  1: ["Can", "PlasticBottle"]

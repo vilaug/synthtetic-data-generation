@@ -1,0 +1,1 @@
+docker build -t recycleye . && docker run --rm -v "$(pwd)":/workdir recycleye blender -noaudio -b -E CYCLES -P test/test_all.py -- --testdir test

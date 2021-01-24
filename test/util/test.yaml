@@ -1,0 +1,11 @@
+# yaml file for testing
+
+key1:
+
+    key1.1: stringvalue
+    
+
+key2:
+
+    key2.1: 1
+    key2.2: [1, 2, 3]

@@ -1,0 +1,1 @@
+sonar-scanner.bat   -D"sonar.organization=recycleye"   -D"sonar.projectKey=tudelt-project"   -D"sonar.sources=."   -D"sonar.host.url=https://sonarcloud.io"  -D"sonar.login=1ec3a0f51816707a52d450fd7eae387ece780eab"

@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module blender</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>blender</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:d%3A%5Cdocuments%5Crecycleye%5Csrc%5Cblender%5Cblender.py">d:\documents\recycleye\src\blender\blender.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;import&nbsp;bpy<br>
+#&nbsp;import&nbsp;addon_utils</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="glob.html">glob</a><br>
+</td><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="pathlib.html">pathlib</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="blender.html#Blender">Blender</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Blender">class <strong>Blender</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Interacts&nbsp;with&nbsp;<a href="#Blender">Blender</a>.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Blender-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Blender-activate_model"><strong>activate_model</strong></a>(self, model)</dt><dd><tt>Activates&nbsp;the&nbsp;model.<br>
+:param&nbsp;model:&nbsp;model&nbsp;to&nbsp;be&nbsp;activated<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Blender-apply_modifier"><strong>apply_modifier</strong></a>(self, modifier)</dt><dd><tt>Applies&nbsp;a&nbsp;modifier&nbsp;of&nbsp;the&nbsp;active&nbsp;<a href="builtins.html#object">object</a>.<br>
+modifier&nbsp;can&nbsp;be&nbsp;one&nbsp;of&nbsp;the&nbsp;following&nbsp;enums:<br>
+['DATA_TRANSFER',&nbsp;'MESH_CACHE',&nbsp;'MESH_SEQUENCE_CACHE',&nbsp;'NORMAL_EDIT',<br>
+'WEIGHTED_NORMAL',&nbsp;'UV_PROJECT',&nbsp;'UV_WARP',&nbsp;'VERTEX_WEIGHT_EDIT',&nbsp;'VERTEX_WEIGHT_MIX',<br>
+'VERTEX_WEIGHT_PROXIMITY',&nbsp;'ARRAY',&nbsp;'BEVEL',&nbsp;'BOOLEAN',&nbsp;'BUILD',&nbsp;'DECIMATE',&nbsp;'EDGE_SPLIT',<br>
+'MASK',&nbsp;'MIRROR',&nbsp;'MULTIRES',&nbsp;'REMESH',&nbsp;'SCREW',&nbsp;'SKIN',&nbsp;'SOLIDIFY',&nbsp;'SUBSURF',<br>
+'TRIANGULATE',&nbsp;'WELD',&nbsp;'WIREFRAME',&nbsp;'ARMATURE',&nbsp;'CAST',&nbsp;'CURVE',&nbsp;'DISPLACE',&nbsp;'HOOK',<br>
+'LAPLACIANDEFORM',&nbsp;'LATTICE',&nbsp;'MESH_DEFORM',&nbsp;'SHRINKWRAP',&nbsp;'SIMPLE_DEFORM',&nbsp;'SMOOTH',<br>
+'CORRECTIVE_SMOOTH',&nbsp;'LAPLACIANSMOOTH',&nbsp;'SURFACE_DEFORM',&nbsp;'WARP',&nbsp;'WAVE',&nbsp;'CLOTH',<br>
+'COLLISION',&nbsp;'DYNAMIC_PAINT',&nbsp;'EXPLODE',&nbsp;'FLUID',&nbsp;'OCEAN',&nbsp;'PARTICLE_INSTANCE',<br>
+'PARTICLE_SYSTEM',&nbsp;'SOFT_BODY',&nbsp;'SURFACE']<br>
+:param&nbsp;modifier:&nbsp;specifies&nbsp;which&nbsp;one&nbsp;to&nbsp;apply<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Blender-camera_view_bounds_2d"><strong>camera_view_bounds_2d</strong></a>(self, scene, obj)</dt><dd><tt>Taken&nbsp;from<br>
+blender.stackexchange.com/questions/7198/save-the-2d-bounding-box-of-an-<a href="builtins.html#object">object</a>-in-rendered-image-to-a-text-file<br>
+&nbsp;<br>
+Returns&nbsp;camera&nbsp;space&nbsp;bounding&nbsp;box&nbsp;of&nbsp;mesh&nbsp;<a href="builtins.html#object">object</a>.<br>
+&nbsp;<br>
+Negative&nbsp;'z'&nbsp;value&nbsp;means&nbsp;the&nbsp;point&nbsp;is&nbsp;behind&nbsp;the&nbsp;camera.<br>
+&nbsp;<br>
+Takes&nbsp;shift-x/y,&nbsp;lens&nbsp;angle&nbsp;and&nbsp;sensor&nbsp;size&nbsp;into&nbsp;account<br>
+as&nbsp;well&nbsp;as&nbsp;perspective/ortho&nbsp;projections.<br>
+&nbsp;<br>
+:arg&nbsp;scene:&nbsp;Scene&nbsp;to&nbsp;use&nbsp;for&nbsp;frame&nbsp;size.<br>
+:type&nbsp;scene:&nbsp;:class:`bpy.types.Scene`<br>
+:arg&nbsp;obj:&nbsp;Untransformed&nbsp;Mesh.<br>
+:type&nbsp;obj:&nbsp;:class:`bpy.types.Mesh´<br>
+:return:&nbsp;a&nbsp;Box&nbsp;<a href="builtins.html#object">object</a>&nbsp;(call&nbsp;its&nbsp;to_tuple()&nbsp;method&nbsp;to&nbsp;get&nbsp;x,&nbsp;y,&nbsp;width&nbsp;and&nbsp;height)<br>
+:rtype:&nbsp;:class:`Box`</tt></dd></dl>
+
+<dl><dt><a name="Blender-choose_background"><strong>choose_background</strong></a>(self, filename, seed)</dt><dd><tt>Method&nbsp;used&nbsp;for&nbsp;getting&nbsp;the&nbsp;right&nbsp;background&nbsp;or&nbsp;a&nbsp;random&nbsp;one<br>
+:param&nbsp;filename:&nbsp;string&nbsp;name&nbsp;of&nbsp;file&nbsp;or&nbsp;'random'&nbsp;for&nbsp;random<br>
+:param&nbsp;seed:&nbsp;integer&nbsp;for&nbsp;predicting&nbsp;randomness<br>
+:return:&nbsp;string&nbsp;name&nbsp;of&nbsp;file</tt></dd></dl>
+
+<dl><dt><a name="Blender-clear_scene"><strong>clear_scene</strong></a>(self, except_objects)</dt><dd><tt>Clears&nbsp;the&nbsp;scene&nbsp;so&nbsp;that&nbsp;there&nbsp;are&nbsp;no&nbsp;side&nbsp;effects&nbsp;from&nbsp;previous&nbsp;operations.<br>
+except&nbsp;the&nbsp;ones&nbsp;specified.<br>
+:param&nbsp;except_objects:&nbsp;list&nbsp;of&nbsp;<a href="builtins.html#object">object</a>&nbsp;name&nbsp;strings&nbsp;not&nbsp;be&nbsp;removed<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Blender-color_object"><strong>color_object</strong></a>(self, obj, rgb)</dt><dd><tt>Set&nbsp;color&nbsp;of&nbsp;an&nbsp;<a href="builtins.html#object">object</a>&nbsp;to&nbsp;RGB&nbsp;value.<br>
+:param&nbsp;obj:&nbsp;<a href="builtins.html#object">object</a>&nbsp;to&nbsp;be&nbsp;changed&nbsp;color&nbsp;of.<br>
+:param&nbsp;rgb:&nbsp;list&nbsp;with&nbsp;3&nbsp;entries&nbsp;specifying&nbsp;rgb&nbsp;colors.<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Blender-export_scene"><strong>export_scene</strong></a>(self, filepath)</dt><dd><tt>Exports&nbsp;the&nbsp;current&nbsp;scene&nbsp;as&nbsp;an&nbsp;<a href="builtins.html#object">object</a>.<br>
+:param&nbsp;filepath:&nbsp;place&nbsp;where&nbsp;the&nbsp;scene&nbsp;is&nbsp;stored&nbsp;as&nbsp;well&nbsp;as&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;<a href="builtins.html#object">object</a><br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Blender-get_labeled_object_bounding_boxes"><strong>get_labeled_object_bounding_boxes</strong></a>(self, object_names, render_configuration)</dt><dd><tt>Gets&nbsp;the&nbsp;bounding&nbsp;boxes&nbsp;for&nbsp;the&nbsp;objects&nbsp;in&nbsp;the&nbsp;scene.<br>
+:param&nbsp;object_names:&nbsp;list&nbsp;of&nbsp;<a href="builtins.html#object">object</a>&nbsp;names<br>
+:param&nbsp;render_configuration:&nbsp;render&nbsp;configuration<br>
+:return:&nbsp;a&nbsp;list&nbsp;of&nbsp;tuples&nbsp;(<a href="builtins.html#object">object</a>&nbsp;name,&nbsp;bounding&nbsp;box)</tt></dd></dl>
+
+<dl><dt><a name="Blender-get_model"><strong>get_model</strong></a>(self, name)</dt><dd><tt>Returns&nbsp;the&nbsp;<a href="builtins.html#object">object</a>&nbsp;by&nbsp;name.<br>
+:param&nbsp;name:&nbsp;identifier&nbsp;of&nbsp;<a href="builtins.html#object">object</a><br>
+:return:&nbsp;<a href="builtins.html#object">object</a>&nbsp;with&nbsp;name</tt></dd></dl>
+
+<dl><dt><a name="Blender-get_object_names"><strong>get_object_names</strong></a>(self)</dt><dd><tt>Gets&nbsp;the&nbsp;names&nbsp;of&nbsp;the&nbsp;objects&nbsp;that&nbsp;are&nbsp;currently&nbsp;in&nbsp;the&nbsp;scene.<br>
+:return:&nbsp;a&nbsp;list&nbsp;of&nbsp;object_names</tt></dd></dl>
+
+<dl><dt><a name="Blender-render"><strong>render</strong></a>(self, src_dir, output_location, name)</dt><dd><tt>Renders&nbsp;image&nbsp;in&nbsp;blender.<br>
+:param&nbsp;src_dir:&nbsp;string&nbsp;for&nbsp;source&nbsp;directory.<br>
+:param&nbsp;output_location:&nbsp;string&nbsp;for&nbsp;output&nbsp;folder.<br>
+:param&nbsp;name:&nbsp;string&nbsp;for&nbsp;name&nbsp;of&nbsp;file.<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Blender-reset_objects"><strong>reset_objects</strong></a>(self)</dt><dd><tt>Resets&nbsp;the&nbsp;objects&nbsp;above&nbsp;the&nbsp;plane.<br>
+:return:&nbsp;none</tt></dd></dl>
+
+<dl><dt><a name="Blender-select_objects"><strong>select_objects</strong></a>(self, except_objects)</dt><dd><tt>Select&nbsp;all&nbsp;models&nbsp;except&nbsp;for&nbsp;the&nbsp;names&nbsp;given.<br>
+:param&nbsp;except_objects:&nbsp;list&nbsp;of&nbsp;<a href="builtins.html#object">object</a>&nbsp;name&nbsp;strings&nbsp;to&nbsp;not&nbsp;select<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Blender-set_mesh_deform"><strong>set_mesh_deform</strong></a>(self, target)</dt><dd><tt>Adds&nbsp;the&nbsp;MeshDeform&nbsp;modifier&nbsp;to&nbsp;the&nbsp;active&nbsp;<a href="builtins.html#object">object</a>.<br>
+This&nbsp;binds&nbsp;all&nbsp;the&nbsp;vertices&nbsp;of&nbsp;the&nbsp;active&nbsp;<a href="builtins.html#object">object</a>&nbsp;to&nbsp;the&nbsp;vertices&nbsp;of&nbsp;the&nbsp;(lower-poly)&nbsp;cage.<br>
+:param&nbsp;target:&nbsp;the&nbsp;cage&nbsp;that&nbsp;the&nbsp;active&nbsp;<a href="builtins.html#object">object</a>&nbsp;is&nbsp;mapped&nbsp;to<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Blender-set_object_location"><strong>set_object_location</strong></a>(self, obj, location)</dt><dd><tt>Places&nbsp;<a href="builtins.html#object">object</a>&nbsp;at&nbsp;random&nbsp;coordinates.<br>
+:param&nbsp;obj:&nbsp;<a href="builtins.html#object">object</a>&nbsp;to&nbsp;be&nbsp;moved.<br>
+:param&nbsp;location:&nbsp;list&nbsp;with&nbsp;3&nbsp;entries&nbsp;specifying&nbsp;x,y,z&nbsp;coordinates.<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Blender-set_object_orientation"><strong>set_object_orientation</strong></a>(self, obj, orientation)</dt><dd><tt>Rotates&nbsp;<a href="builtins.html#object">object</a>&nbsp;to&nbsp;a&nbsp;random&nbsp;orientation.<br>
+:param&nbsp;obj:&nbsp;<a href="builtins.html#object">object</a>&nbsp;to&nbsp;be&nbsp;rotated.<br>
+:param&nbsp;orientation:&nbsp;list&nbsp;with&nbsp;3&nbsp;entries&nbsp;specifying&nbsp;rotation.<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Blender-set_render_device"><strong>set_render_device</strong></a>(self, device)</dt><dd><tt>Set&nbsp;render&nbsp;device.<br>
+:param&nbsp;device:&nbsp;device&nbsp;to&nbsp;be&nbsp;used&nbsp;for&nbsp;rendering.&nbsp;Choice:&nbsp;[CPU,GPU].<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Blender-set_render_output_parameters"><strong>set_render_output_parameters</strong></a>(self)</dt><dd><tt>Sets&nbsp;the&nbsp;render&nbsp;output&nbsp;parameters&nbsp;which&nbsp;it&nbsp;gets&nbsp;from&nbsp;configuration.yaml<br>
+The&nbsp;parameters&nbsp;that&nbsp;will&nbsp;be&nbsp;changed&nbsp;are&nbsp;x&nbsp;and&nbsp;y&nbsp;resolution&nbsp;and&nbsp;percentage,<br>
+max&nbsp;amount&nbsp;of&nbsp;ray&nbsp;tracing&nbsp;bounces,&nbsp;samples,&nbsp;tile&nbsp;size<br>
+and&nbsp;set&nbsp;denoising&nbsp;to&nbsp;True.<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Blender-set_softbody"><strong>set_softbody</strong></a>(self)</dt><dd><tt>Adds&nbsp;the&nbsp;SoftBody&nbsp;modifier&nbsp;to&nbsp;the&nbsp;active&nbsp;<a href="builtins.html#object">object</a><br>
+This&nbsp;is&nbsp;for&nbsp;the&nbsp;realistic&nbsp;deformation&nbsp;of&nbsp;the&nbsp;<a href="builtins.html#object">object</a><br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Blender-setup_background_plane"><strong>setup_background_plane</strong></a>(self, filename, x_size, y_size, seed)</dt><dd><tt>Render&nbsp;specific&nbsp;background&nbsp;plane&nbsp;with&nbsp;given&nbsp;name<br>
+:param&nbsp;filename:&nbsp;string&nbsp;name&nbsp;of&nbsp;backgorund&nbsp;to&nbsp;be&nbsp;added.<br>
+:param&nbsp;x_size:&nbsp;integer&nbsp;for&nbsp;x_size.<br>
+:param&nbsp;y_size:&nbsp;integer&nbsp;for&nbsp;y_size.<br>
+:param&nbsp;seed:&nbsp;integer&nbsp;for&nbsp;predicting&nbsp;randomness<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Blender-setup_bodies"><strong>setup_bodies</strong></a>(self)</dt><dd><tt>Sets&nbsp;up&nbsp;rigid&nbsp;bodies&nbsp;for&nbsp;simulating&nbsp;fall<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Blender-setup_border_plane"><strong>setup_border_plane</strong></a>(self, axis, translation, name)</dt><dd><tt>Sets&nbsp;up&nbsp;vertical&nbsp;individual&nbsp;border&nbsp;plane.<br>
+:param&nbsp;axis:&nbsp;list&nbsp;with&nbsp;3&nbsp;entries&nbsp;specifying&nbsp;specific&nbsp;axis.<br>
+:param&nbsp;translation:&nbsp;list&nbsp;with&nbsp;3&nbsp;entries&nbsp;specifying&nbsp;translation&nbsp;plane.<br>
+:param&nbsp;name:&nbsp;string&nbsp;name&nbsp;for&nbsp;border.<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Blender-setup_border_planes"><strong>setup_border_planes</strong></a>(self, x_size, y_size)</dt><dd><tt>Sets&nbsp;up&nbsp;vertical&nbsp;border&nbsp;planes.<br>
+:param&nbsp;x_size:&nbsp;integer&nbsp;stating&nbsp;x_size.<br>
+:param&nbsp;y_size:&nbsp;integer&nbsp;stating&nbsp;y_size.<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Blender-setup_cage"><strong>setup_cage</strong></a>(self, target)</dt><dd><tt>Adds&nbsp;a&nbsp;cage&nbsp;to&nbsp;a&nbsp;target&nbsp;model.<br>
+The&nbsp;cage&nbsp;is&nbsp;made&nbsp;from&nbsp;a&nbsp;sphere&nbsp;.<br>
+It&nbsp;is&nbsp;made&nbsp;in&nbsp;the&nbsp;right&nbsp;form&nbsp;using&nbsp;the&nbsp;ShrinkWrap&nbsp;modifier.<br>
+:param&nbsp;target:&nbsp;<a href="builtins.html#object">object</a>&nbsp;for&nbsp;which&nbsp;the&nbsp;cage&nbsp;gets&nbsp;formed<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Blender-setup_camera"><strong>setup_camera</strong></a>(self, coordinates, rotation)</dt><dd><tt>Places&nbsp;camera&nbsp;at&nbsp;inputted&nbsp;coordinates.<br>
+:param&nbsp;coordinates:&nbsp;list&nbsp;with&nbsp;3&nbsp;entries&nbsp;specifying&nbsp;x,y,z&nbsp;coordinates.<br>
+:param&nbsp;rotation:&nbsp;list&nbsp;with&nbsp;3&nbsp;entries&nbsp;specifying&nbsp;rotation.<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Blender-setup_crush_plane"><strong>setup_crush_plane</strong></a>(self)</dt><dd><tt>Setup&nbsp;plane&nbsp;for&nbsp;curshing.<br>
+This&nbsp;means&nbsp;adding&nbsp;a&nbsp;collision&nbsp;modifier<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Blender-setup_light"><strong>setup_light</strong></a>(self, coordinates, energy, type)</dt><dd><tt>Places&nbsp;light&nbsp;at&nbsp;inputted&nbsp;co-ordinates.<br>
+:param&nbsp;coordinates:&nbsp;list&nbsp;with&nbsp;3&nbsp;entries&nbsp;specifying&nbsp;x,y,z&nbsp;coordinates.<br>
+:param&nbsp;energy:&nbsp;integer&nbsp;specifying&nbsp;light&nbsp;strength.<br>
+:param&nbsp;type:&nbsp;string&nbsp;specifying&nbsp;light&nbsp;type.<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Blender-setup_object"><strong>setup_object</strong></a>(self, object)</dt><dd><tt>Imports&nbsp;the&nbsp;<a href="builtins.html#object">object</a>&nbsp;from&nbsp;variable&nbsp;path.<br>
+:param&nbsp;<a href="builtins.html#object">object</a>:&nbsp;<a href="builtins.html#object">object</a>&nbsp;to&nbsp;be&nbsp;setup.<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Blender-simulate"><strong>simulate</strong></a>(self, frames)</dt><dd><tt>Simulates&nbsp;in&nbsp;blender&nbsp;for&nbsp;a&nbsp;certain&nbsp;amount&nbsp;of&nbsp;frames.<br>
+:param&nbsp;frames:&nbsp;integer&nbsp;amount&nbsp;of&nbsp;frames&nbsp;to&nbsp;simulate<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

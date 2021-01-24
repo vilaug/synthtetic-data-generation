@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module object</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>object</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:d%3A%5Cdocuments%5Crecycleye%5Csrc%5Cblender%5Cobject.py">d:\documents\recycleye\src\blender\object.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="json.html">json</a><br>
+<a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+<a href="pathlib.html">pathlib</a><br>
+</td><td width="25%" valign=top><a href="random.html">random</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="object.html#Object">Object</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Object">class <strong>Object</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Object">Object</a>(path,&nbsp;location,&nbsp;orientation,&nbsp;color,&nbsp;seed)<br>
+&nbsp;<br>
+<a href="#Object">Object</a>&nbsp;class&nbsp;to&nbsp;divide&nbsp;logic&nbsp;between&nbsp;an&nbsp;<a href="builtins.html#object">object</a>&nbsp;and&nbsp;blender.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Object-__init__"><strong>__init__</strong></a>(self, path, location, orientation, color, seed)</dt><dd><tt>Initializes&nbsp;properties&nbsp;of&nbsp;the&nbsp;<a href="builtins.html#object">object</a>.<br>
+:param&nbsp;path:&nbsp;string&nbsp;path&nbsp;specifying&nbsp;<a href="builtins.html#object">object</a>&nbsp;path.<br>
+:param&nbsp;location:&nbsp;string&nbsp;specifying&nbsp;objects&nbsp;location&nbsp;or&nbsp;'random'&nbsp;for&nbsp;random&nbsp;location.<br>
+:param&nbsp;orientation:&nbsp;string&nbsp;specifying&nbsp;objects&nbsp;orientation&nbsp;or&nbsp;'random'<br>
+for&nbsp;random&nbsp;orientation.<br>
+:param&nbsp;color:&nbsp;string&nbsp;specifying&nbsp;objects&nbsp;color&nbsp;or&nbsp;'random'&nbsp;for&nbsp;random&nbsp;color.<br>
+:seed:&nbsp;integer&nbsp;for&nbsp;predictable&nbsp;randomness&nbsp;or&nbsp;None&nbsp;for&nbsp;actual&nbsp;randomness</tt></dd></dl>
+
+<dl><dt><a name="Object-change_mtl"><strong>change_mtl</strong></a>(self, file_to_edit, new_skin, line_number)</dt><dd><tt>Changes&nbsp;the&nbsp;map_Kd&nbsp;line&nbsp;in&nbsp;mtl&nbsp;file.<br>
+:param&nbsp;line_number:&nbsp;Line&nbsp;number&nbsp;of&nbsp;mtl&nbsp;file&nbsp;to&nbsp;be&nbsp;edited<br>
+:param&nbsp;file_to_edit:&nbsp;File&nbsp;containing&nbsp;line&nbsp;to&nbsp;be&nbsp;changed<br>
+:param&nbsp;new_skin:&nbsp;New&nbsp;line&nbsp;to&nbsp;replace&nbsp;file<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Object-change_skin"><strong>change_skin</strong></a>(self, src_dir, object_name, mtl_directory, new_skin)</dt><dd><tt>Find&nbsp;line&nbsp;number(s)&nbsp;to&nbsp;be&nbsp;changed&nbsp;and&nbsp;change&nbsp;them.<br>
+:param&nbsp;mtl_directory:&nbsp;Directory&nbsp;of&nbsp;mtl&nbsp;file&nbsp;to&nbsp;be&nbsp;edited<br>
+:param&nbsp;src_dir:&nbsp;Source&nbsp;directory<br>
+:param&nbsp;object_name:&nbsp;<a href="builtins.html#object">object</a>&nbsp;whose&nbsp;skin&nbsp;will&nbsp;be&nbsp;randomized<br>
+:param&nbsp;new_skin:&nbsp;New&nbsp;skin&nbsp;of&nbsp;<a href="builtins.html#object">object</a><br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Object-get_key"><strong>get_key</strong></a>(self, val, my_dict)</dt><dd><tt>Find&nbsp;key&nbsp;in&nbsp;a&nbsp;dict&nbsp;using&nbsp;value.<br>
+:param&nbsp;val:&nbsp;Value&nbsp;of&nbsp;key&nbsp;to&nbsp;be&nbsp;found<br>
+:param&nbsp;my_dict:&nbsp;Dict&nbsp;to&nbsp;be&nbsp;queried<br>
+:return:&nbsp;Key&nbsp;if&nbsp;found&nbsp;else&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Object-random_color"><strong>random_color</strong></a>(self, seed)</dt><dd><tt>Return&nbsp;random&nbsp;color<br>
+:param&nbsp;seed:&nbsp;integer&nbsp;for&nbsp;repeatable&nbsp;randomness.<br>
+:return:&nbsp;n3&nbsp;entry&nbsp;list&nbsp;to&nbsp;indicate&nbsp;rgb&nbsp;color</tt></dd></dl>
+
+<dl><dt><a name="Object-random_location"><strong>random_location</strong></a>(self, seed)</dt><dd><tt>Return&nbsp;random&nbsp;location.<br>
+:param&nbsp;seed:&nbsp;integer&nbsp;for&nbsp;repeatable&nbsp;randomness.<br>
+:return:&nbsp;3&nbsp;entry&nbsp;list&nbsp;to&nbsp;indicate&nbsp;location</tt></dd></dl>
+
+<dl><dt><a name="Object-random_orientation"><strong>random_orientation</strong></a>(self, seed)</dt><dd><tt>Return&nbsp;random&nbsp;orientation<br>
+:param&nbsp;seed:&nbsp;integer&nbsp;for&nbsp;repeatable&nbsp;randomness.<br>
+:return:&nbsp;3&nbsp;entry&nbsp;list&nbsp;to&nbsp;indicate&nbsp;orientation</tt></dd></dl>
+
+<dl><dt><a name="Object-randomize_object"><strong>randomize_object</strong></a>(self, seed)</dt><dd><tt>If&nbsp;user&nbsp;selects&nbsp;properties&nbsp;of&nbsp;<a href="builtins.html#object">object</a>&nbsp;can&nbsp;be&nbsp;made&nbsp;random<br>
+:param&nbsp;seed:&nbsp;integer&nbsp;for&nbsp;repeatable&nbsp;randomness.<br>
+:return:&nbsp;none</tt></dd></dl>
+
+<dl><dt><a name="Object-randomize_skin"><strong>randomize_skin</strong></a>(self, src_dir)</dt><dd><tt>Randomizes&nbsp;skins&nbsp;using&nbsp;Skins.json&nbsp;by&nbsp;editing&nbsp;the&nbsp;mtl&nbsp;file.<br>
+:param&nbsp;src_dir:&nbsp;Source&nbsp;directory&nbsp;of&nbsp;project<br>
+:return:&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Object-read_skins_json"><strong>read_skins_json</strong></a>(self, skins_json)</dt><dd><tt>Read&nbsp;json&nbsp;<a href="builtins.html#object">object</a>&nbsp;and&nbsp;decode&nbsp;according&nbsp;to&nbsp;translation&nbsp;table&nbsp;at<br>
+https://docs.python.org/3/library/json.html<br>
+:param&nbsp;skins_json:&nbsp;json&nbsp;file&nbsp;to&nbsp;be&nbsp;read<br>
+:return:&nbsp;json&nbsp;objects&nbsp;converted&nbsp;to&nbsp;Python&nbsp;structures</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

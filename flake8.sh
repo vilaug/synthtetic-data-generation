@@ -1,0 +1,1 @@
+python3 -m flake8 --max-function-length=15 --max-line-length=100 --exclude coveragepy
