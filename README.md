@@ -6,15 +6,6 @@ Liudas Mikalauskas, Simon Mariën, Abel Van Steenweghen, Rahul Kochar
 
 Project plan: https://www.overleaf.com/project/5e9eba0cd86870000192edc4
 
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=tudelt-project&metric=coverage&token=f5d41b95f43e05d080447ad9da895f54d4ebf033)](https://sonarcloud.io/dashboard?id=tudelt-project)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=tudelt-project&metric=bugs&token=f5d41b95f43e05d080447ad9da895f54d4ebf033)](https://sonarcloud.io/dashboard?id=tudelt-project)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=tudelt-project&metric=code_smells&token=f5d41b95f43e05d080447ad9da895f54d4ebf033)](https://sonarcloud.io/dashboard?id=tudelt-project)
-[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=tudelt-project&metric=duplicated_lines_density&token=f5d41b95f43e05d080447ad9da895f54d4ebf033)](https://sonarcloud.io/dashboard?id=tudelt-project)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=tudelt-project&metric=sqale_rating&token=f5d41b95f43e05d080447ad9da895f54d4ebf033)](https://sonarcloud.io/dashboard?id=tudelt-project)
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=tudelt-project&metric=reliability_rating&token=f5d41b95f43e05d080447ad9da895f54d4ebf033)](https://sonarcloud.io/dashboard?id=tudelt-project)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=tudelt-project&metric=security_rating&token=f5d41b95f43e05d080447ad9da895f54d4ebf033)](https://sonarcloud.io/dashboard?id=tudelt-project)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=tudelt-project&metric=vulnerabilities&token=f5d41b95f43e05d080447ad9da895f54d4ebf033)](https://sonarcloud.io/dashboard?id=tudelt-project)
-
 # User guide
 A guide for a user with no programming background.
 
